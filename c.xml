@@ -97,18 +97,8 @@
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_arithmetic" id="646" inline="true">
-                                            <field name="OP">ADD</field>
-                                            <value name="A">
-                                              <block type="math_number" id="598">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="653">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
+                                          <block type="math_number" id="598">
+                                            <field name="NUM">1</field>
                                           </block>
                                         </value>
                                       </block>
