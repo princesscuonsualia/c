@@ -16,8 +16,8 @@
           <block type="controls_whileUntil" id="102" inline="false">
             <field name="MODE">UNTIL</field>
             <value name="NUMBER">
-              <block type="sensor_spectrometer" id="141">
-                <field name="LIGHT">BLUE</field>
+              <block type="sensor_button" id="148">
+                <field name="OBJECT">ENTER</field>
               </block>
             </value>
             <statement name="DO">
@@ -27,5 +27,8 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="sensor_spectrometer" id="141" x="662" y="232">
+    <field name="LIGHT">BLUE</field>
   </block>
 </xml>
