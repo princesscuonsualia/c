@@ -27,36 +27,34 @@
                     <field name="NUM">5</field>
                   </block>
                 </value>
-                <next>
-                  <block type="controls_if" id="245" inline="false">
-                    <value name="IF0">
-                      <block type="sensor_spectrometer" id="255">
-                        <field name="LIGHT">BLUE</field>
-                      </block>
-                    </value>
-                    <statement name="DO0">
-                      <block type="controls_whileUntil" id="102" inline="false">
-                        <field name="MODE">UNTIL</field>
-                        <value name="NUMBER">
-                          <block type="sensor_button" id="148">
-                            <field name="OBJECT">ENTER</field>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="movement_forward" id="88"></block>
-                        </statement>
-                      </block>
-                    </statement>
-                    <next>
-                      <block type="movement_stop" id="219"></block>
-                    </next>
-                  </block>
-                </next>
               </block>
             </next>
           </block>
         </next>
       </block>
+    </next>
+  </block>
+  <block type="controls_if" id="245" inline="false" x="510" y="139">
+    <value name="IF0">
+      <block type="sensor_spectrometer" id="255">
+        <field name="LIGHT">BLUE</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="controls_whileUntil" id="102" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="148">
+            <field name="OBJECT">ENTER</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="88"></block>
+        </statement>
+      </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="219"></block>
     </next>
   </block>
 </xml>
