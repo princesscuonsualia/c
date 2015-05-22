@@ -28,7 +28,4 @@
       </block>
     </next>
   </block>
-  <block type="sensor_spectrometer" id="141" x="662" y="232">
-    <field name="LIGHT">BLUE</field>
-  </block>
 </xml>
