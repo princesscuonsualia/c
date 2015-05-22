@@ -20,7 +20,7 @@
                 <field name="OP">ADD</field>
                 <value name="A">
                   <block type="math_number" id="195">
-                    <field name="NUM">5</field>
+                    <field name="NUM">1</field>
                   </block>
                 </value>
                 <value name="B">
@@ -28,7 +28,7 @@
                     <field name="OP">ADD</field>
                     <value name="A">
                       <block type="math_number" id="340">
-                        <field name="NUM">4</field>
+                        <field name="NUM">1</field>
                       </block>
                     </value>
                     <value name="B">
@@ -36,7 +36,7 @@
                         <field name="OP">ADD</field>
                         <value name="A">
                           <block type="math_number" id="347">
-                            <field name="NUM">3</field>
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <value name="B">
@@ -44,7 +44,7 @@
                             <field name="OP">ADD</field>
                             <value name="A">
                               <block type="math_number" id="354">
-                                <field name="NUM">2</field>
+                                <field name="NUM">1</field>
                               </block>
                             </value>
                             <value name="B">
