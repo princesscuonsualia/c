@@ -68,12 +68,63 @@
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawnumber" id="386" inline="true">
-                    <value name="NUMBER">
-                      <block type="math_number" id="393">
-                        <field name="NUM">3</field>
+                  <block type="robot_delay" id="419" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="426">
+                        <field name="NUM">5000</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="oled_cleardisplay" id="442">
+                        <next>
+                          <block type="oled_drawnumber" id="386" inline="true">
+                            <value name="NUMBER">
+                              <block type="math_number" id="393">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="robot_delay" id="450" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="457">
+                                    <field name="NUM">5000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_cleardisplay" id="481">
+                                    <next>
+                                      <block type="controls_if" id="245" inline="false">
+                                        <value name="IF0">
+                                          <block type="sensor_spectrometer" id="255">
+                                            <field name="LIGHT">BLUE</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="controls_whileUntil" id="102" inline="false">
+                                            <field name="MODE">UNTIL</field>
+                                            <value name="NUMBER">
+                                              <block type="sensor_button" id="148">
+                                                <field name="OBJECT">ENTER</field>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="movement_forward" id="88"></block>
+                                            </statement>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="movement_stop" id="219"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -81,29 +132,6 @@
           </block>
         </next>
       </block>
-    </next>
-  </block>
-  <block type="controls_if" id="245" inline="false" x="488" y="207">
-    <value name="IF0">
-      <block type="sensor_spectrometer" id="255">
-        <field name="LIGHT">BLUE</field>
-      </block>
-    </value>
-    <statement name="DO0">
-      <block type="controls_whileUntil" id="102" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="148">
-            <field name="OBJECT">ENTER</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="88"></block>
-        </statement>
-      </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="219"></block>
     </next>
   </block>
 </xml>
