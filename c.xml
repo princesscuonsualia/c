@@ -55,7 +55,21 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_stop" id="219"></block>
+                              <block type="movement_stop" id="219">
+                                <next>
+                                  <block type="movement_right" id="748">
+                                    <next>
+                                      <block type="movement_rightmotor" id="941" inline="true">
+                                        <value name="MOVRIGHT">
+                                          <block type="sensor_object" id="842">
+                                            <field name="OBJECT">LEFTFRONT</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
