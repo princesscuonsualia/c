@@ -93,7 +93,7 @@
                                         <field name="OP">ADD</field>
                                         <value name="A">
                                           <block type="math_number" id="633">
-                                            <field name="NUM">1</field>
+                                            <field name="NUM">0</field>
                                           </block>
                                         </value>
                                         <value name="B">
