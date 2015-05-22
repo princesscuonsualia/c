@@ -13,7 +13,17 @@
           </block>
         </value>
         <next>
-          <block type="movement_forward" id="88"></block>
+          <block type="controls_whileUntil" id="102" inline="false">
+            <field name="MODE">UNTIL</field>
+            <value name="NUMBER">
+              <block type="sensor_spectrometer" id="141">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_forward" id="88"></block>
+            </statement>
+          </block>
         </next>
       </block>
     </next>
