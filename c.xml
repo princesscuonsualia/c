@@ -101,12 +101,12 @@
                                             <field name="OP">ADD</field>
                                             <value name="A">
                                               <block type="math_number" id="598">
-                                                <field name="NUM">0</field>
+                                                <field name="NUM">1</field>
                                               </block>
                                             </value>
                                             <value name="B">
                                               <block type="math_number" id="653">
-                                                <field name="NUM">0</field>
+                                                <field name="NUM">1</field>
                                               </block>
                                             </value>
                                           </block>
