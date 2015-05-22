@@ -64,7 +64,7 @@
               <block type="oled_drawnumber" id="157" inline="true">
                 <value name="NUMBER">
                   <block type="math_number" id="202">
-                    <field name="NUM">4</field>
+                    <field name="NUM">1</field>
                   </block>
                 </value>
                 <next>
